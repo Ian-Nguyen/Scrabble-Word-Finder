@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scrabble Word Finder</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+<!--
+
+<div class="jumbotron text-center">
+  <h1>Scrabble Word Finder</h1>
+  <p>Are you stuck? Enter in your letters and we can help you. </p>
+  <form class="form-inline">
+    <div class="input-group">
+      <label for="letters">Letters</label>
+      <input type="text" id="letters"/>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Find Words</button>
+        <pre id="words"></pre>
+      </div>
+    </div>
+  </form>
+</div>
+-->
+
+<!-- <div class="page-content"> -->
+<div class="jumbotron text-center">
+  <h1>Scrabble Word Finder</h1>
+  <p>Are you stuck? Enter in your letters and we can help you. </p>
+  <div class="wrapper">
+    <label for="letters">Letters:</label>
+    <input type="text" id="letters"/>
+    
+    <input type="checkbox" id="double"/>
+    <label for="double">2x</label>
+  
+    <input type="checkbox" id="triple"/>
+    <label for="triple">3x</label>
+
+    <button onclick="findWords()">Find Words</button>
+
+    <pre id="words"></pre>
+    </div>
+  </div>
+</div>
+
+<script src="lib/ScrabbleWordList.js"></script>
+<script src="src/ScrabbleWordFinder.js"></script>
+<script src="src/index.js"></script>
+</body>
+
+</html>
